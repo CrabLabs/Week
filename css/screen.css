@@ -1,0 +1,98 @@
+/* line 41, ../scss/grid.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 27, ../scss/grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../scss/grid.scss */
+body:after {
+  clear: both;
+}
+
+/* line 9, ../scss/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 16, ../scss/screen.scss */
+html {
+  min-height: 100%;
+}
+
+/* line 19, ../scss/screen.scss */
+body {
+  min-height: 100%;
+}
+
+/* line 22, ../scss/screen.scss */
+header {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 0%;
+  background: #999999;
+}
+/* line 26, ../scss/screen.scss */
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, ../scss/screen.scss */
+div#main {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 0%;
+}
+/* line 34, ../scss/screen.scss */
+div#main section {
+  display: block;
+  width: 100%;
+  margin: 0 0%;
+  *zoom: 1;
+}
+/* line 27, ../scss/grid.scss */
+div#main section:before, div#main section:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../scss/grid.scss */
+div#main section:after {
+  clear: both;
+}
+/* line 37, ../scss/screen.scss */
+div#main section article {
+  display: inline;
+  float: left;
+  width: 33.33333%;
+  margin: 0 0%;
+  background: #d9d9d9;
+  padding: 40px;
+}
+@media (max-width: 960px) {
+  /* line 37, ../scss/screen.scss */
+  div#main section article {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+  }
+}
+
+/* line 49, ../scss/screen.scss */
+footer {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 0%;
+  background: #b3b3b3;
+  padding: 40px;
+}

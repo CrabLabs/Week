@@ -1,0 +1,54 @@
+@import "grid";
+
+// $column-width: 60px;
+$gutter-width: 0px;
+// $columns: 12;
+// Set $total-width to 100% for a fluid layout
+$total-width: 100%;
+
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+html{
+	min-height: 100%;
+}
+body{
+	min-height: 100%;
+}
+header{
+	@include column(12);
+
+	background: hsl(0, 0%, 60%);
+	h1{
+		margin: 0;
+		padding: 0;
+	}
+}
+div#main{
+	@include column(12);
+
+	section{
+		@include row(12);
+
+		article{
+			@include column(4);
+
+			background: hsl(0, 0%, 85%);
+			padding: 40px;
+
+			@media (max-width: 960px) {
+				@include column(12);
+			}
+		}
+	}
+}
+footer{
+	@include column(12);
+
+	background: hsl(0, 0%, 70%);
+	padding: 40px;
+}
