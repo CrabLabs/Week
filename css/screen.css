@@ -26,33 +26,89 @@ html {
   min-height: 100%;
 }
 
-/* line 19, ../scss/screen.scss */
+/* line 20, ../scss/screen.scss */
 body {
   min-height: 100%;
 }
 
-/* line 22, ../scss/screen.scss */
+/* line 24, ../scss/screen.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 29, ../scss/screen.scss */
 header {
   display: inline;
   float: left;
   width: 100%;
   margin: 0 0%;
-  background: #999999;
+  position: fixed;
+  z-index: 999;
 }
-/* line 26, ../scss/screen.scss */
+/* line 34, ../scss/screen.scss */
+header nav {
+  background: #999999;
+  clear: both;
+  height: 30px;
+}
+/* line 38, ../scss/screen.scss */
+header nav ul {
+  display: block;
+  float: right;
+  font-size: 0;
+  height: 100%;
+  margin: 0 30px;
+  padding: 0;
+}
+/* line 45, ../scss/screen.scss */
+header nav ul li {
+  background: red;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  width: 150px;
+}
+/* line 53, ../scss/screen.scss */
+header nav ul li:hover {
+  height: 120px;
+}
+/* line 56, ../scss/screen.scss */
+header nav ul li a {
+  color: white;
+  display: block;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 120px;
+  width: 100%;
+}
+/* line 72, ../scss/screen.scss */
 header h1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 31, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 div#main {
   display: inline;
   float: left;
   width: 100%;
   margin: 0 0%;
+  margin: 30px 0 0 0;
 }
-/* line 34, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
+div#main #slideshow {
+  border-bottom: 5px dashed lightGreen;
+  height: 600px;
+  width: 100%;
+}
+/* line 87, ../scss/screen.scss */
 div#main section {
   display: block;
   width: 100%;
@@ -68,17 +124,16 @@ div#main section:before, div#main section:after {
 div#main section:after {
   clear: both;
 }
-/* line 37, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 div#main section article {
   display: inline;
   float: left;
   width: 33.33333%;
   margin: 0 0%;
-  background: #d9d9d9;
   padding: 40px;
 }
 @media (max-width: 960px) {
-  /* line 37, ../scss/screen.scss */
+  /* line 90, ../scss/screen.scss */
   div#main section article {
     display: inline;
     float: left;
@@ -87,12 +142,39 @@ div#main section article {
   }
 }
 
-/* line 49, ../scss/screen.scss */
+/* line 101, ../scss/screen.scss */
 footer {
   display: inline;
   float: left;
   width: 100%;
   margin: 0 0%;
-  background: #b3b3b3;
   padding: 40px;
+}
+/* line 105, ../scss/screen.scss */
+footer ul {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+/* line 110, ../scss/screen.scss */
+footer ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+/* line 113, ../scss/screen.scss */
+footer ul li a {
+  color: lightBlue;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 120, ../scss/screen.scss */
+footer p {
+  color: lightGreen;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 124, ../scss/screen.scss */
+footer p a {
+  border-bottom: 1px dashed;
 }
