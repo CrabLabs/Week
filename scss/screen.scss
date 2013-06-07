@@ -30,27 +30,27 @@ header{
 	@include column(12);
 	position: fixed;
 	z-index: 999;
-
 	nav{
+		@include column(12);
 		background: hsl(0, 0%, 60%);
-		clear: both;
 		height: 30px;
 		ul{
 			display: block;
-			float: right;
 			font-size: 0;
 			height: 100%;
-			margin: 0 30px;
+			margin: 0;
 			padding: 0;
 			li{
 				background: red;
 				display: inline-block;
 				height: 100%;
 				margin: 0;
+				overflow: hidden;
 				padding: 0;
 				vertical-align: top;
 				width: 150px;
 				&:hover{
+					box-shadow: 0 0 10px hsla(0, 0%, 60%, .4);
 					height: 120px;
 				}
 				a{
@@ -70,8 +70,12 @@ header{
 	}
 
 	h1{
+		background: hsl(0, 50%, 50%);
+		display: block;
+		height: 100px;
 		margin: 0;
 		padding: 0;
+		width: 100px;
 	}
 }
 div#main{
@@ -105,7 +109,7 @@ footer{
 	ul{
 		display: block;
 		margin: 0 auto;
-		text-align: center;		
+		text-align: center;
 		width: 100%;
 		li{
 			display: inline-block;
@@ -114,6 +118,10 @@ footer{
 				color: lightBlue;
 				text-align: center;
 				text-decoration: none;
+				text-transform: uppercase;
+				&:hover{
+					border-bottom: 1px dashed;
+				}
 			}
 		}
 	}
