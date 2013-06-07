@@ -23,39 +23,73 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menú</a></li>
-                    <li><a href="#">Sobre Week</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="/" class="stagedLink">Home</a></li>
+                    <li><a href="/menu" class="stagedLink">Menú</a></li>
+                    <li><a href="/sobre-week" class="stagedLink">Sobre Week</a></li>
+                    <li><a href="/contacto" class="stagedLink">Contacto</a></li>
                 </ul>
             </nav>
             <h1>Week</h1>
         </header>
 
         <div id="main" role="main">
-            <section id="slideshow">
+            <section id="home">
+                <section id="slideshow">
+                    <img src="img/slider_example_1.jpg">
+                </section>
 
+                <section>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </article>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </article>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </article>
+                </section>
             </section>
 
-            <section>
+            <section id="menu">
+                <h2>Menú</h2>
                 <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <img src="img/bandejas.jpg">
                 </article>
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                </article>
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                </article>
+            </sction>
+
+            <section id="sobre-week">
+                <h2>Sobre Week</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="index.html">
+                    <fieldset>
+                        <label for="contact_name">Nombre</label>
+                        <input type="text" id="contact_name">
+                        <label for="contact_email">Email</label>
+                        <input type="email" id="contact_email">
+                        <label for="contact_msg">Mensaje</label>
+                        <textarea id="contact_msg"></textarea>
+                        <input type="Submit" value="¡Enviar!">
+                    </fieldset>
+                </form>
             </section>
         </div>
 
         <footer>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Sobre Week</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/" class="stagedLink">Home</a></li>
+                <li><a href="/menu" class="stagedLink">Menú</a></li>
+                <li><a href="/sobre-week" class="stagedLink">Sobre Week</a></li>
+                <li><a href="/contacto" class="stagedLink">Contacto</a></li>
             </ul>
             <p>Week. Desarrollado por <a href="http://crab.uy/">CrabLabs</a> &copy; 2013</p>
         </footer>
