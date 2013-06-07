@@ -47,7 +47,13 @@ header {
   position: fixed;
   z-index: 999;
 }
-/* line 41, ../scss/screen.scss */
+@media (max-width: 960px) {
+  /* line 37, ../scss/screen.scss */
+  header {
+    position: relative;
+  }
+}
+/* line 44, ../scss/screen.scss */
 header nav {
   display: inline;
   float: left;
@@ -56,7 +62,7 @@ header nav {
   background: url("../img/header-bar.jpg");
   height: 10px;
 }
-/* line 45, ../scss/screen.scss */
+/* line 48, ../scss/screen.scss */
 header nav ul {
   display: block;
   font-size: 0;
@@ -65,7 +71,7 @@ header nav ul {
   padding: 0;
   text-align: right;
 }
-/* line 52, ../scss/screen.scss */
+/* line 55, ../scss/screen.scss */
 header nav ul li {
   background-size: cover !important;
   display: inline-block;
@@ -76,43 +82,43 @@ header nav ul li {
   vertical-align: top;
   width: 95px;
 }
-/* line 62, ../scss/screen.scss */
+/* line 65, ../scss/screen.scss */
 header nav ul li:nth-of-type(1) {
   background: url(../img/arrow_nav_1.png);
 }
-/* line 65, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 header nav ul li:nth-of-type(2) {
   background: url(../img/arrow_nav_2.png);
 }
-/* line 68, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 header nav ul li:nth-of-type(3) {
   background: url(../img/arrow_nav_3.png);
 }
-/* line 71, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 header nav ul li:nth-of-type(4) {
   background: url(../img/arrow_nav_4.png);
 }
-/* line 74, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 header nav ul li .active, header nav ul li:hover {
   height: 105px;
 }
-/* line 78, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 header nav ul li .active:nth-of-type(1), header nav ul li:hover:nth-of-type(1) {
   background: url(../img/nav_1.png);
 }
-/* line 81, ../scss/screen.scss */
+/* line 84, ../scss/screen.scss */
 header nav ul li .active:nth-of-type(2), header nav ul li:hover:nth-of-type(2) {
   background: url(../img/nav_2.png);
 }
-/* line 84, ../scss/screen.scss */
+/* line 87, ../scss/screen.scss */
 header nav ul li .active:nth-of-type(3), header nav ul li:hover:nth-of-type(3) {
   background: url(../img/nav_3.png);
 }
-/* line 87, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 header nav ul li .active:nth-of-type(4), header nav ul li:hover:nth-of-type(4) {
   background: url(../img/nav_4.png);
 }
-/* line 91, ../scss/screen.scss */
+/* line 94, ../scss/screen.scss */
 header nav ul li a {
   color: white;
   display: block;
@@ -125,7 +131,7 @@ header nav ul li a {
   line-height: 120px;
   width: 100%;
 }
-/* line 107, ../scss/screen.scss */
+/* line 110, ../scss/screen.scss */
 header h1 {
   background: url("../img/logo.png") no-repeat;
   display: block;
@@ -139,7 +145,7 @@ header h1 {
   width: 220px;
 }
 
-/* line 120, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 div#main {
   display: inline;
   float: left;
@@ -147,19 +153,19 @@ div#main {
   margin: 0 0%;
   margin: 30px 0 0 0;
 }
-/* line 124, ../scss/screen.scss */
+/* line 127, ../scss/screen.scss */
 div#main #home #slideshow {
   border-bottom: 5px dashed lightGreen;
   height: 600px;
   width: 100%;
 }
-/* line 128, ../scss/screen.scss */
+/* line 131, ../scss/screen.scss */
 div#main #home #slideshow img {
   display: block;
   height: 100%;
   margin: 0 auto;
 }
-/* line 134, ../scss/screen.scss */
+/* line 137, ../scss/screen.scss */
 div#main #home section {
   display: block;
   width: 100%;
@@ -175,7 +181,7 @@ div#main #home section:before, div#main #home section:after {
 div#main #home section:after {
   clear: both;
 }
-/* line 137, ../scss/screen.scss */
+/* line 140, ../scss/screen.scss */
 div#main #home section article {
   display: inline;
   float: left;
@@ -184,7 +190,7 @@ div#main #home section article {
   padding: 40px;
 }
 @media (max-width: 960px) {
-  /* line 137, ../scss/screen.scss */
+  /* line 140, ../scss/screen.scss */
   div#main #home section article {
     display: inline;
     float: left;
@@ -192,39 +198,51 @@ div#main #home section article {
     margin: 0 0%;
   }
 }
-/* line 149, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 div#main #menu h2, div#main #menu p, div#main #menu form, div#main #menu article, div#main #sobre-week h2, div#main #sobre-week p, div#main #sobre-week form, div#main #sobre-week article, div#main #contacto h2, div#main #contacto p, div#main #contacto form, div#main #contacto article {
   margin-left: 25%;
   margin-right: 40px;
   text-align: justify;
 }
-/* line 156, ../scss/screen.scss */
+@media (max-width: 960px) {
+  /* line 152, ../scss/screen.scss */
+  div#main #menu h2, div#main #menu p, div#main #menu form, div#main #menu article, div#main #sobre-week h2, div#main #sobre-week p, div#main #sobre-week form, div#main #sobre-week article, div#main #contacto h2, div#main #contacto p, div#main #contacto form, div#main #contacto article {
+    margin-left: 0%;
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    margin: 40px 0;
+    padding: 0 40px;
+  }
+}
+/* line 166, ../scss/screen.scss */
 div#main #menu img, div#main #sobre-week img, div#main #contacto img {
   width: 100%;
 }
-/* line 161, ../scss/screen.scss */
+/* line 171, ../scss/screen.scss */
 div#main form {
   margin: 0;
   padding: 0;
 }
-/* line 164, ../scss/screen.scss */
+/* line 174, ../scss/screen.scss */
 div#main form fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 168, ../scss/screen.scss */
+/* line 178, ../scss/screen.scss */
 div#main form fieldset label, div#main form fieldset input, div#main form fieldset textarea {
   display: block;
   margin: 10px 0;
   width: 100%;
 }
-/* line 173, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 div#main form fieldset input, div#main form fieldset textarea {
   padding: 10px;
 }
 
-/* line 179, ../scss/screen.scss */
+/* line 189, ../scss/screen.scss */
 footer {
   display: inline;
   float: left;
@@ -232,36 +250,36 @@ footer {
   margin: 0 0%;
   padding: 40px;
 }
-/* line 183, ../scss/screen.scss */
+/* line 193, ../scss/screen.scss */
 footer ul {
   display: block;
   margin: 0 auto;
   text-align: center;
   width: 100%;
 }
-/* line 188, ../scss/screen.scss */
+/* line 198, ../scss/screen.scss */
 footer ul li {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 191, ../scss/screen.scss */
+/* line 201, ../scss/screen.scss */
 footer ul li a {
   color: lightBlue;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 196, ../scss/screen.scss */
+/* line 206, ../scss/screen.scss */
 footer ul li a:hover {
   border-bottom: 1px dashed;
 }
-/* line 202, ../scss/screen.scss */
+/* line 212, ../scss/screen.scss */
 footer p {
   color: lightGreen;
   font-size: 12px;
   text-align: center;
 }
-/* line 206, ../scss/screen.scss */
+/* line 216, ../scss/screen.scss */
 footer p a {
   border-bottom: 1px dashed;
 }
