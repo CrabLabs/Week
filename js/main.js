@@ -9,6 +9,10 @@
 
 			event.preventDefault();
 
+			$("nav ul li.active").removeClass("active");
+
+			$(this).parent("li").addClass("active");
+
 			id 		= "#" + link.substr(1);
 
 			if (id === "#") {
