@@ -60,7 +60,7 @@ header nav {
   width: 100%;
   margin: 0 0%;
   background: url("../img/header-bar.jpg");
-  height: 10px;
+  height: 5px;
 }
 /* line 48, ../scss/screen.scss */
 header nav ul {
@@ -73,7 +73,7 @@ header nav ul {
 }
 /* line 55, ../scss/screen.scss */
 header nav ul li {
-  background-size: cover !important;
+  background-size: cover!important;
   display: inline-block;
   height: 100%;
   margin: 0;
@@ -155,7 +155,7 @@ div#main {
 }
 /* line 127, ../scss/screen.scss */
 div#main #home #slideshow {
-  border-bottom: 5px dashed lightGreen;
+  border-bottom: 5px dashed lightgreen;
   height: 600px;
   width: 100%;
 }
