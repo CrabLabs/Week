@@ -155,7 +155,7 @@ div#main {
 }
 /* line 127, ../scss/screen.scss */
 div#main #home #slideshow {
-  border-bottom: 5px dashed lightgreen;
+  border-bottom: 5px dashed #00a514;
   height: 600px;
   width: 100%;
 }
