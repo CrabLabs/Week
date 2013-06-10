@@ -43,40 +43,45 @@ header{
 	z-index: 999;
 	nav{
 		@include column(12);
-		background: url("../img/header-bar.jpg");
+		background: url("../img/header-bar.jpg") right repeat-x;
 		height: 5px;
 		ul{
 			display: block;
 			font-size: 0;
 			height: 100%;
-			margin: 0 30px 0 0;
+			margin: 0 330px 0 0;
 			padding: 0;
+			position:relative;
 			text-align: right;
 			li{
-				background-size: cover!important;
 				display: inline-block;
 				height: 100%;
-				margin: 0;
+				margin-top: 3px;
 				overflow: hidden;
-				padding: 0;
+				padding-bottom: 15px;
+				position:absolute;
 				vertical-align: top;
 				// width: 190px;
 				width: 95px;
 				&:nth-of-type(1){
-					background: url(../img/arrow_nav_1.png);
+					background: url(../img/arrow_nav_1.png) top center no-repeat;
+					right: 240px;
 				}
 				&:nth-of-type(2){
-					background: url(../img/arrow_nav_2.png);
+					background: url(../img/arrow_nav_2.png) top center no-repeat;
+					right: 160px;
 				}
 				&:nth-of-type(3){
-					background: url(../img/arrow_nav_3.png);
+					background: url(../img/arrow_nav_3.png) top center no-repeat;
+					right: 80px;
 				}
 				&:nth-of-type(4){
-					background: url(../img/arrow_nav_4.png);
+					background: url(../img/arrow_nav_4.png) top center no-repeat;
+					right: 0;
 				}
 				&.active, &:hover{
 					// height: 210px;
-					// background-size: cover!important;
+					background-size: cover!important;
 					height: 105px;
 					&:nth-of-type(1){
 						background: url(../img/nav_1.png);
